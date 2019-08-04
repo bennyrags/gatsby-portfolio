@@ -3,25 +3,24 @@ import ListItem from '@material-ui/core/ListItem';
 import { Link } from 'gatsby';
 
 const MenuListItems = () => {
-const listItemStyle = {
-    textAlign:'center',
-    fontSize: '1.5em',
-    color:'#fff'
-}
+
 
 return (
 <>
-<ListItem style={listItemStyle}>
-<Link to='/'>hello</Link>
+<ListItem>
+<Link to='/'>Home</Link>
 </ListItem>
-<ListItem style={listItemStyle}>
-<Link to='/projects'>projects</Link>
+<ListItem>
+<Link to='/projects'>Projects</Link>
 </ListItem>
-<ListItem style={listItemStyle}>
-<Link to='/resume'>resume</Link>
+<ListItem>
+<Link to='/resume'>Resume</Link>
 </ListItem >
-<ListItem style={listItemStyle}>
-<Link to='/contact'>contact</Link>
+<ListItem>
+<Link to='/contact'>Contact</Link>
+</ListItem>
+<ListItem>
+<Link to='/contact'>Contact</Link>
 </ListItem>
 </>
 )

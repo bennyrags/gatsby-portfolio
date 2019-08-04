@@ -1,33 +1,51 @@
 import React from 'react';
 import List from '@material-ui/core/List';
 import MenuListItems from './MenuListItems'
+import { makeStyles } from '@material-ui/core/styles'
 
-const MenuList = () => {
 
-    const drawerWidth = () => {
-        if (window.innerWidth < 768) {
-            return window.innerWidth;
-        }
-        return window.innerWidth / 2;
+const drawerWidth = () => {
+    if (window.innerWidth < 768) {
+        return window.innerWidth;
     }
+    return window.innerWidth / 2;
+}
 
-    const listStyles = {
+const newListStyles = makeStyles({
+    root: {
         width: drawerWidth(),
         display: 'flex',
         flexDirection: 'column',
         background: 'red',
         height: '100%',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
 
+        '& li': {
+            fontSize: '1.5em',
+            display: 'block',
+
+            '& a': {
+                color: '#fff',
+                display: 'block',
+                textAlign: 'center'
+            }
         }
 
-//TODO: LOOP THROUGH EXISTNG PAGES TO CREATE MENU ITEMS 
+    }
+
+})
+
+const MenuList = () => {
+
+    const classes = newListStyles();
+
+    //TODO: LOOP THROUGH EXISTNG PAGES TO CREATE MENU ITEMS 
     return (
-    <List style={listStyles}>
-        
-<MenuListItems />
-</List> 
-)
+        <List className={classes.root}>
+            <MenuListItems />
+        </List>
+
+    )
 
 }
 
