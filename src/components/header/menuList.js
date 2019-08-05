@@ -16,7 +16,7 @@ const newListStyles = makeStyles({
         width: drawerWidth(),
         display: 'flex',
         flexDirection: 'column',
-        background: 'red',
+        background: '#ff6961',
         height: '100%',
         justifyContent: 'space-around',
 

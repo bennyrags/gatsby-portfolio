@@ -32,7 +32,7 @@ const MenuButton = () => {
         fontSize:'2em',
         color: '#fff',
         cursor:'pointer',
-        backgroundColor:'red',
+        backgroundColor:'#ff6961',
         zIndex:1
     }
 

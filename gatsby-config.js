@@ -5,5 +5,10 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: 'Ben Ragsdale Stuff',
+    description: 'Ben Ragsdale\'s portfolio.'
+  }, 
+  plugins: ['gatsby-plugin-react-helmet']
   /* Your site config here */
 }
