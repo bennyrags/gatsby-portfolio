@@ -10,5 +10,5 @@ module.exports = {
     description: 'Ben Ragsdale\'s portfolio.'
   }, 
   plugins: ['gatsby-plugin-react-helmet']
-  /* Your site config here */
+  /* site config here */
 }

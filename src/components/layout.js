@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import {Global, css} from '@emotion/core'
+import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet';
 import Header from './header/header'
+import useSiteMetadata from '../hooks/useSiteMetadata'
 
-const Layout = ({ children }) => (
-<>
-<Global styles={css`
+const Layout = ({ children }) => {
+
+const {title, description} = useSiteMetadata();
+
+    return (
+    <>
+        <Global styles={css`
 body {
     margin:0;
     padding:0;
@@ -28,12 +33,18 @@ main > section:first-of-type {
 
 }
 `}
-/>
-<Header />
-<main>
-{children}
-</main>
-</>
+        />
+        <Helmet>
+            <html lang="en" />
+            <title>{title}</title>
+            <meta name="description" content={description} />
+        </Helmet>
+        <Header />
+        <main>
+            {children}
+        </main>
+    </>
 )
+}
 
 export default Layout;

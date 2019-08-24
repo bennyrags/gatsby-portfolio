@@ -1,6 +1,9 @@
 import React from "react"
 import Header from '../components/header/header'
-import Layout from '../components/layout'
+import Layout from '../components/layout';
+import CurrentBook from '../components/home-currents/current-book';
+import CurrentJob from '../components/home-currents/current-job';
+import CurrentGeek from '../components/home-currents/current-geeking';
 export default () => <div>
     
     <Layout>
@@ -11,6 +14,12 @@ export default () => <div>
     <h1>Hello, I'm Ben</h1>
     <h2>I build websites and web apps</h2>
     <h2>I'm currently working at:</h2>
+    <CurrentJob />
+    <h2>I'm currently reading:</h2>
+    <CurrentBook />
+    <h2>I'm currently geeking out on:</h2>
+    <CurrentGeek />
+    
     </section>
     </section>
     
