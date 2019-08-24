@@ -21,8 +21,11 @@ const MenuButton = () => {
     const buttonStyles = {
         width:'49px',
         height:'49px',
-        border: '1px solid grey',
-       cursor:'pointer'
+        border: '1px solid white',
+       cursor:'pointer',
+       color: 'white',
+       backgroundColor:'transparent',
+       fontSize: '18px'
         }
   
     const svgStyles = {

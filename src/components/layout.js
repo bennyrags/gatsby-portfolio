@@ -14,11 +14,18 @@ main {
     display:grid;
     grid-template-columns: 50% 50%;
 
-    &@media (max-width:700px) {
-        display:block;
-    }
-
 }
+
+@media (max-width:700px) {
+main{
+    display:block;
+}
+
+main > section:first-of-type {
+    display:none;
+}
+}
+
 }
 `}
 />
