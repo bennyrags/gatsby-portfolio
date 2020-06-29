@@ -14,10 +14,10 @@ module.exports = {
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-     // name:`data`,
+     name:`currents`,
       path: `${__dirname}/src/data/`
     }
   }
-]
+],
   /* site config here */
 }
