@@ -1,5 +1,9 @@
 
 
 [
-    {"currentJob": "Thomson Reuters"}
+    {"currentJob": "Thomson Reuters",
+    "currentBook": "Austerlitz",
+    "currentGeek": "Accessibiliy in Javascript"
+
+    }
 ]

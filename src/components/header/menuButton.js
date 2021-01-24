@@ -4,7 +4,6 @@ import MenuList from './menuList'
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 
-
 const MenuButton = () => {
     const [state, setState] = React.useState({
     left: false,
@@ -22,10 +21,10 @@ const MenuButton = () => {
         width:'49px',
         height:'49px',
         border: '1px solid white',
-       cursor:'pointer',
-       color: 'white',
-       backgroundColor:'transparent',
-       fontSize: '18px'
+        cursor:'pointer',
+        color: 'white',
+        backgroundColor:'transparent',
+        fontSize: '18px'
         }
   
     const svgStyles = {
