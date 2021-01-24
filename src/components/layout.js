@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
 import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet';
 import Header from './header/Header'
