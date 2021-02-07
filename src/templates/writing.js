@@ -2,34 +2,45 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Header from '../components/header/header'
+import '../styles/writing.css'
 
-export default function Template({
-    data // this prop will be injected by the GraphQL query we'll write in a bit
-  }) {
+//TODO - 2-7-21 - incorporate emotion here, to change stuff based on image, etc.
+// -- change color of menu button depending on color of background img 
+// - also, make background image stuff a11y
+
+export default function Template({data}) {
     const { markdownRemark: post } = data // data.markdownRemark holds your post data
+
     return (
         <>
-        <Header />
-      <div className="writing-container">
         <Helmet title={`Ben Ragsdale writing - ${post.frontmatter.title}`} />
-        <div className="writing-post">
+        <Header />
+      <div className="writingContainer">
+        <main className="writingPost">
+          <section className="writingHeader" style={{backgroundImage: 'url(' + `${post.frontmatter.heroImg}` + ')' }}>
           <h1>{post.frontmatter.title}</h1>
-          <div
-            className="writing-post-content"
+          </section>
+          <section
+            className="writingContent"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-        </div>
+          <section className="signature">
+            BWR - {post.frontmatter.date}
+          </section>
+        </main>
       </div>
       </>
     )
   }
   export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query WritingPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         path
         title
+        heroImg
+        date
       }
     }
   }

@@ -1,7 +1,8 @@
 ---
 path: '/first-post'
-date: 02/07/21
+date: 'Sunday, February 7th, 2021'
 title: 'My First Post'
+heroImg: '/images/writingImgs/GFloydSqSnow.jpg'
 ---
 
 This is my first post, which is a test of the transformer - page creation doohickey that I'm following on Gatby's website.

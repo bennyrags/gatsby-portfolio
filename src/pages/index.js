@@ -5,9 +5,11 @@ import CurrentBook from '../components/home-currents/current-book';
 import CurrentJob from '../components/home-currents/current-job';
 import CurrentGeek from '../components/home-currents/current-geeking';
 
+//TODO - 2-7-21 - a11y for buttons, background image
+
 const ImgSection = styled.section`
 height: 100vh;
-background: url(/monkeyandi_478x706.jpg) no-repeat;
+background: url(images/monkeyandi_478x706.jpg) no-repeat;
 background-position: center;
 background-size: cover;
 `;
