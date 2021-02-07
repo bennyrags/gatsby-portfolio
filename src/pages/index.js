@@ -5,7 +5,6 @@ import CurrentBook from '../components/home-currents/current-book';
 import CurrentJob from '../components/home-currents/current-job';
 import CurrentGeek from '../components/home-currents/current-geeking';
 
-
 const ImgSection = styled.section`
 height: 100vh;
 background: url(/monkeyandi_478x706.jpg) no-repeat;
@@ -20,7 +19,6 @@ overflow: scroll;
 const RightSectionInner = styled.section`
 padding: 30px 0 0 30px;
 `
-
 
 export default () =>
   <div>
