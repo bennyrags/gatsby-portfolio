@@ -5,10 +5,16 @@ import { makeStyles } from '@material-ui/core/styles'
 
 
 const drawerWidth = () => {
-    if (window.innerWidth < 768) {
-        return window.innerWidth;
+    //was getting window not defined error had to add this if undefined statement
+    if (typeof window !== 'undefined') {
+        if (window.innerWidth < 768) {
+            return window.innerWidth;
+        }
+        return window.innerWidth / 2;
     }
-    return window.innerWidth / 2;
+    else {
+        return '100%';
+    }
 }
 
 const newListStyles = makeStyles({
