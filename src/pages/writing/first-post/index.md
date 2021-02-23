@@ -1,5 +1,5 @@
 ---
-path: '/first-post'
+path: '/writing/first-post'
 date: 'Sunday, February 7th, 2021'
 title: 'My First Post'
 heroImg: '/images/writingImgs/GFloydSqSnow.jpg'
