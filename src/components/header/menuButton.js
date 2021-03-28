@@ -17,7 +17,7 @@ const MenuButton = () => {
         setState({ ...state, [side]: open });
       };
 
-    const buttonStyles = {
+    const openButtonStyles = {
         width:'49px',
         height:'49px',
         border: '1px solid white',
@@ -27,7 +27,7 @@ const MenuButton = () => {
         fontSize: '18px'
         }
   
-    const svgStyles = {
+    const closeButtonStyles = {
         position:'absolute',
         top: 5,
         right:5,
@@ -35,7 +35,9 @@ const MenuButton = () => {
         color: '#fff',
         cursor:'pointer',
         backgroundColor:'#ff6961',
-        zIndex:1
+        zIndex:1,
+        border: 'none',
+        background: 'transparent'
     }
 
 
@@ -45,9 +47,10 @@ const MenuButton = () => {
     return(
         <>
        <button 
-       style={buttonStyles}
-       onClick={toggleDrawer('left', true)
-      }
+       style={openButtonStyles}
+       onClick={toggleDrawer('left', true)}
+       aria-label='Open menu'
+
        >
            ME<br />NU
        </button>
@@ -55,16 +58,15 @@ const MenuButton = () => {
      open={state.left} 
      onClose={toggleDrawer('left', false)}
      >
-        <SvgIcon
-        style={svgStyles}
-    onClick={toggleDrawer('left', false)}
-    aria-label='Close menu button'
-    focusable={true}
-    role='button'
-    tabIndex={1}
-    >
-            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-        </SvgIcon>
+       <button
+       aria-label='Close menu'
+       style={closeButtonStyles}
+       onClick={toggleDrawer('left', false)}
+       >
+          <SvgIcon>
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+          </SvgIcon>
+        </button>
 <MenuList />
        </Drawer>
        </>

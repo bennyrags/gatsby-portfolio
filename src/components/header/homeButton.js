@@ -6,9 +6,15 @@ import Benny from '../../../public/static/me_100x100.jpg'
            width:'50px',
            height:'50px',
        }
+       const btn = {
+           background: 'transparent',
+           border: 'none'
+       }
    
-    return (    
+    return (
+            <button style={btn}>    
             <img style={img} src={Benny} alt='Ben Ragsdale headshot' />
+            </button>
     )
 }
 
