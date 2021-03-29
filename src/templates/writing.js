@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
-import Header from '../components/header/header'
 import '../styles/writing.css'
 
 //TODO - 2-7-21 - incorporate emotion here, to change stuff based on image, etc.
@@ -13,22 +12,21 @@ export default function Template({data}) {
 
     return (
         <>
-        <Helmet title={`Ben Ragsdale writing - ${post.frontmatter.title}`} />
-        <Header />
-      <div className="writingContainer">
-        <main className="writingPost">
-          <section className="writingHeader" style={{backgroundImage: 'url(' + `${post.frontmatter.heroImg}` + ')' }}>
-          <h1>{post.frontmatter.title}</h1>
-          </section>
-          <section
-            className="writingContent"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-          <section className="signature">
-            BWR - {post.frontmatter.date}
-          </section>
-        </main>
-      </div>
+      <Helmet title={`Ben Ragsdale writing - ${post.frontmatter.title}`} />
+        <div className="writingContainer">
+          <main className="writingPost">
+            <section className="writingHeader" style={{backgroundImage: 'url(' + `${post.frontmatter.heroImg}` + ')' }}>
+            <h1>{post.frontmatter.title}</h1>
+            </section>
+            <section
+              className="writingContent"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
+            <section className="signature">
+              BWR - {post.frontmatter.date}
+            </section>
+          </main>
+        </div>
       </>
     )
   }
