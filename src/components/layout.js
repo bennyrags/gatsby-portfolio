@@ -20,6 +20,7 @@ main {
     grid-template-columns: 50% 50%;
 }
 
+
 @media (max-width:700px) {
 main {
     display:block;

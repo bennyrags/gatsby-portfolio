@@ -2,6 +2,7 @@ import React from "react"
 import WritingLink from "../../components/writing-link"
 import Layout from '../../components/layout'
 
+
 const WritingIndex = ({data: {
     allMarkdownRemark: {edges},
 }, 
@@ -9,9 +10,11 @@ const WritingIndex = ({data: {
     const Posts = edges.map(edge => <WritingLink key={edge.node.id} post={edge.node} />)
     return (
       <>
-      <Layout >
+      <Layout>
+          <section>
           <h1>Writing</h1>
           {Posts}
+          </section>
       </Layout>
       </>
         )
