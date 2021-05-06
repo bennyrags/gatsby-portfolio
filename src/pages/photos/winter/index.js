@@ -1,4 +1,11 @@
 import React from 'react';
 
-export default () => 
-    <h1>hello from WINTER! </h1>
+const winterPhotos = () => {
+    return(
+        <h1>hello from WINTER! </h1>
+    )
+}
+
+
+
+export default winterPhotos 

@@ -21,9 +21,9 @@ overflow: scroll;
 const RightSectionInner = styled.section`
 padding: 30px 0 0 30px;
 `
-
-export default () =>
-  <div>
+const home = () => {
+  return (
+    <div>
     <Layout>
       <ImgSection />
       <RightSectionOuter>
@@ -44,3 +44,8 @@ export default () =>
 
     </Layout>
   </div>
+  )
+}
+
+export default home;
+

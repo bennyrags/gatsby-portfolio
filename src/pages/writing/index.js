@@ -1,7 +1,7 @@
 import React from "react"
 import WritingLink from "../../components/writing-link"
 import Layout from '../../components/layout'
-
+import { graphql } from 'gatsby'
 
 const WritingIndex = ({data: {
     allMarkdownRemark: {edges},
