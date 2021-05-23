@@ -1,8 +1,12 @@
 import React from 'react';
+import Layout from '../../../components/layout'
+
 
 const birdsPhotos = () => {
     return (
-        <h1>Hello from bird photos!</h1>
+        <Layout>
+            <h1>Hello from bird photos!</h1>
+        </Layout>
     )
 
 }
