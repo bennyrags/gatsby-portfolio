@@ -15,8 +15,8 @@ body {
     margin:0;
     padding:0;
 main {
-    margin-top: 100px;
-    padding: 0 100px;
+    display:grid;
+    grid-template-columns: 50% 50%;
 }
 
 

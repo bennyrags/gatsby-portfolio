@@ -1,6 +1,6 @@
 import React from "react"
 import styled from '@emotion/styled';
-import Layout from '../components/layout';
+import LayoutHome from '../components/layout_home';
 import CurrentBook from '../components/home-currents/current-book';
 import CurrentJob from '../components/home-currents/current-job';
 import CurrentGeek from '../components/home-currents/current-geeking';
@@ -24,7 +24,7 @@ padding: 30px 0 0 30px;
 const home = () => {
   return (
     <div>
-    <Layout>
+    <LayoutHome>
       <ImgSection />
       <RightSectionOuter>
 
@@ -42,7 +42,7 @@ const home = () => {
       </RightSectionOuter>
 
 
-    </Layout>
+    </LayoutHome>
   </div>
   )
 }

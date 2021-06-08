@@ -20,9 +20,9 @@ const MenuButton = () => {
     const openButtonStyles = {
         width:'49px',
         height:'49px',
-        border: '1px solid white',
+        border: '1px solid red',
         cursor:'pointer',
-        color: 'white',
+        color: 'red',
         backgroundColor:'transparent',
         fontSize: '18px'
         }
@@ -32,7 +32,7 @@ const MenuButton = () => {
         top: 5,
         right:5,
         fontSize:'2em',
-        color: '#fff',
+        color: 'white',
         cursor:'pointer',
         backgroundColor:'#ff6961',
         zIndex:1,
