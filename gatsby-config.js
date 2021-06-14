@@ -9,21 +9,29 @@ module.exports = {
     title: 'Ben Ragsdale Stuff',
     description: 'Ben Ragsdale\'s portfolio.'
   }, 
-  plugins: ['gatsby-plugin-react-helmet', 
-  "gatsby-transformer-json", 
+  plugins: [
+  'gatsby-plugin-react-helmet', 
+  'gatsby-transformer-json', 
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/data/`
+    },
+  },
   {
     resolve: 'gatsby-source-filesystem',
     options: {
      name:`pages`,
-      path: `${__dirname}/src/pages/`
-    }
+     path: `${__dirname}/src/pages/`,
+    },
   },
   {
     resolve: "gatsby-transformer-remark",
     options: {
       plugins: []
-    }
-  }
+    },
+  },
 ],
   /* site config here */
 }

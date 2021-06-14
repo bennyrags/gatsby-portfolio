@@ -1,0 +1,57 @@
+[
+    {
+        "path": "assets/monkeyandi_478x706.jpg",
+        "alt": "Monkey and Me",
+        "descr": "A monkey and me",
+        "galleries": {
+            "name": "birds",
+            "featured": true
+        }
+    },
+    {
+        "path": "assets/me.png",
+        "alt": "birds",
+        "descr": "birds",
+        "galleries": {
+            "name": "birds",
+            "featured": false
+        } 
+    },
+    {
+        "path": "",
+        "alt": "",
+        "descr": "",
+        "galleries": {
+            "name": "birds",
+            "featured": false
+        } 
+    },
+    {
+        "path": "",
+        "alt": "",
+        "descr": "",
+        "galleries": {
+            "name": "birds",
+            "featured": false
+        }
+    },
+    {
+        "src": "",
+        "alt": "",
+        "descr": "",
+        "galleries": {
+            "name": "birds",
+            "featured": false
+        }
+    },
+    {
+        "src": "",
+        "alt": "",
+        "descr": "",
+        "galleries": {
+            "name": "birds",
+            "featured": false
+        }
+    }
+
+]
