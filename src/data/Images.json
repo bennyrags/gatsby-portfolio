@@ -1,6 +1,6 @@
 [
     {
-        "path": "assets/monkeyandi_478x706.jpg",
+        "path": "/images/galleries/birds/monkeyandi_478x706.jpg",
         "alt": "Monkey and Me",
         "descr": "A monkey and me",
         "galleries": {
@@ -9,7 +9,7 @@
         }
     },
     {
-        "path": "assets/me.png",
+        "path": "/images/galleries/birds/monkeyandi_478x706.jpg",
         "alt": "birds",
         "descr": "birds",
         "galleries": {
