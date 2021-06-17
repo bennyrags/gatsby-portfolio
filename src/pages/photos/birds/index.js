@@ -6,7 +6,9 @@ const imgStyles = {
     height: '70vh',
     width: 'auto',
 }
-
+const imgContStyles = {
+    minWidth: '500%'
+}
 const sectionStyles = {
     display: 'inline-block',
     paddingRight: '40px',
@@ -40,7 +42,7 @@ const BirdsPhotos = () => {
     );
     return (
         <Layout>
-            <section>
+            <section style={imgContStyles}>
                 {posts}
             </section>
         </Layout>

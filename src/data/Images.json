@@ -1,57 +1,65 @@
 [
     {
-        "path": "/images/galleries/birds/monkeyandi_478x706.jpg",
-        "alt": "Monkey and Me",
-        "descr": "A monkey and me",
+        "path": "/images/galleries/birds/bird-glide.jpg",
+        "alt": "A bird gliding across a white background",
+        "descr": "A bird gliding above my backyard",
+        "galleries": {
+            "name": "birds",
+            "featured": false
+        }
+    },
+    {
+        "path": "/images/galleries/birds/bird-swooping.jpg",
+        "alt": "A bird swooping across a white backgroudn",
+        "descr": "The same bird as before, this time swooping like whoa",
+        "galleries": {
+            "name": "birds",
+            "featured": false
+        } 
+    },
+    {
+        "path": "/images/galleries/birds/DSC_3909.jpg",
+        "alt": "A bird flying in between electrical lines",
+        "descr": "A bird flying in between the electrical lines above my backyard",
         "galleries": {
             "name": "birds",
             "featured": true
-        }
+        } 
     },
     {
-        "path": "/images/galleries/birds/monkeyandi_478x706.jpg",
-        "alt": "birds",
-        "descr": "birds",
+        "path": "/images/galleries/birds/DSC_6093.jpg",
+        "alt": "black bird against a dark blue backdrop",
+        "descr": "A bird flying above Miami Beach shortly after a heavy rain. May, 2021.",
+        "galleries": {
+            "name": "birds",
+            "featured": false
+        } 
+    }, {
+        "path": "/images/galleries/birds/DSC_6321.jpg",
+        "alt": "bird flying above ocean",
+        "descr": "A bird with a big ass beak flying above the Atlantic, with a big ass boat in the background. May, 2021",
         "galleries": {
             "name": "birds",
             "featured": false
         } 
     },
     {
-        "path": "",
-        "alt": "",
-        "descr": "",
+        "path": "/images/galleries/birds/DSC_6386.jpg",
+        "alt": "a bird flying near clouds and an expensive condo",
+        "descr": "A bird flying away from some gaudy condo on Miami Beach. Honestly, Miami Beach kind of sucks. May, 2021.",
         "galleries": {
             "name": "birds",
             "featured": false
         } 
     },
     {
-        "path": "",
-        "alt": "",
-        "descr": "",
+        "path": "/images/galleries/birds/DSC_6767.jpg",
+        "alt": "yellow bird flying",
+        "descr": "A yellow bird flying away from a tree or bush or something at some birdy spot in Bloomington. May, 2021.",
         "galleries": {
             "name": "birds",
             "featured": false
-        }
-    },
-    {
-        "src": "",
-        "alt": "",
-        "descr": "",
-        "galleries": {
-            "name": "birds",
-            "featured": false
-        }
-    },
-    {
-        "src": "",
-        "alt": "",
-        "descr": "",
-        "galleries": {
-            "name": "birds",
-            "featured": false
-        }
+        } 
     }
 
 ]
