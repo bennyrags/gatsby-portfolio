@@ -1,5 +1,5 @@
 import React from 'react';
-import Benny from '../../../public/static/me_100x100.jpg'
+import Benny from '../../../public/static/me.jpg'
  const HomeButton = (props) => {
 
        const img = {

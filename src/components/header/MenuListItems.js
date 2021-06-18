@@ -7,10 +7,7 @@ const MenuListItems = () => {
     return (
         <>
             <ListItem>
-                <Link to='/'>Home</Link>
-            </ListItem>
-            <ListItem>
-                <Link to='/projects'>Projects</Link>
+                <Link to='/photos'>Photos</Link>
             </ListItem>
             <ListItem>
                 <Link to='/resume'>Resume</Link>

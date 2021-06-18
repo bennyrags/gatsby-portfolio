@@ -1,6 +1,13 @@
 import React from 'react';
 import Layout from '../../components/layout'
 import { useStaticQuery, graphql } from "gatsby";
+
+const galleriesStyles = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr 1fr',
+    justifyItems: 'center',
+}
+
 const capitalize = s => {
     if (typeof s !== 'string') return ''
     return s.charAt(0).toUpperCase() + s.slice(1);
@@ -23,17 +30,20 @@ const data = useStaticQuery(graphql`
         }
     }`);
 const imgGalleries = data.allImagesJson.edges.map(img => 
-    <div>
-        <a href={`/photos/${img.node.galleries.name}`}>
-            <img key={img.node.id} src={img.node.path} />
-            <h4>{capitalize(`${img.node.galleries.name}`)}</h4>
+    <div key={`galleryDiv` + img.node.id} > 
+        <a href={`/photos/${img.node.galleries.name}`} style={{"display": "block"}}>
+            <img key={img.node.id} src={img.node.path} style={{"width": "100%"}}/>
+            <h4 style={{"width": "100%", "margin-top": "4px"}}>{capitalize(`${img.node.galleries.name}`)}</h4>
         </a>
     </div>
     
 );
     return (
-        <Layout>
+        <Layout className="hello">
+            <h1>Photo Galleries</h1>
+            <section style={galleriesStyles}>
             {imgGalleries}
+            </section>
         </Layout>
     )
 }
