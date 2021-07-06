@@ -5,19 +5,13 @@ import { useStaticQuery, graphql } from "gatsby";
 const imgStyles = {
     height: '70vh',
     width: 'auto',
-}
-const imgContStyles = {
-    minWidth: '500%'
-}
-const sectionStyles = {
-    display: 'inline-block',
-    paddingRight: '40px',
+    paddingRight: '20px'
 }
 
+
 const headerStyles = {
-    textAlign: 'center',
     fontFamily: 'helvetica, Arial, sans-serif',
-    margin: '4px 0'
+    margin: '4px 0',
 }
 
 const BirdsPhotos = () => {
@@ -35,16 +29,27 @@ const BirdsPhotos = () => {
         }
     }`);
     const posts = data.allImagesJson.edges.map(img => 
-    <div style={sectionStyles}>
         <img key={img.node.id} style={imgStyles} src={img.node.path} alt={img.node.alt} />
-        <h4 style={headerStyles}>{img.node.descr} </h4>
-    </div>
+        
     );
+    const sectionStyles = {
+        display: 'grid',
+        gridTemplateColumns:`repeat(${posts.length}, 1fr)`,
+        overflow: 'scroll'
+    }
+
+
     return (
         <Layout>
-            <section style={imgContStyles}>
-                {posts}
-            </section>
+            <div style={{'display': 'grid', 'grid-template-columns': '25% 75%'}}>
+                <div style={headerStyles}>
+                    <h1>Birds</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <section style={sectionStyles}>
+                    {posts}
+                </section>
+            </div>
         </Layout>
     )
 }
